@@ -1,7 +1,6 @@
-package main
+package hello
 
 import (
-	"fmt"
 	"strings"
 )
 
@@ -36,8 +35,4 @@ func getLangPrefix(language string) (prefix string) {
 	}
 
 	return
-}
-
-func main() {
-	fmt.Println(Hello("", "english"))
 }
