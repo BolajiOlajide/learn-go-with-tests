@@ -23,10 +23,10 @@ func SumAll(numbersToSum ...[]int) (sums []int) {
 
 func SumAllTails(slices ...[]int) (tails []int) {
 	for _, slice := range slices {
-		for idx, number := range slice {
-			if idx != 0 {
-				tails = append(tails, number)
-			}
+		if len(slice) == 0 {
+			tails = append(tails, 0)
+		} else {
+			tails = append(tails, Sum(slice[1:]))
 		}
 	}
 
