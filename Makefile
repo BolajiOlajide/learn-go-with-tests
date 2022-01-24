@@ -6,3 +6,6 @@ test_verbose:
 
 coverage:
 	go test -cover ./...
+
+errcheck:
+	errcheck ./...
